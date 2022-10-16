@@ -1,7 +1,7 @@
 ### Edit the CONTRIBUTORS.md and append
 
 ```
-### Name: <your_name>
+#### Name: <your_name>
 - Department: <your_department>, <your_year_of_study>
 - Batch: 202x-2x
 - GitHub: <github_username>
