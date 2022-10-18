@@ -18,3 +18,8 @@
 - Department: IT, 3rd Year
 - Batch: 2020-24
 - GitHub: nirviksarkar039
+
+#### Name: Abhishek Kumar
+- Department: IT, 3rd Year
+- Batch: 2020-24
+- GitHub: abhisheky1806
