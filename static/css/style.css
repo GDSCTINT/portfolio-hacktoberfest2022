@@ -1,0 +1,15 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.gdsc{
+    height: 100vh;
+    background-color: rgb(211, 209, 209);
+}
+.navbar-gdsc{
+    height: 10vh;
+} 
+.footer-gdsc{
+    height: 40vh;
+}
