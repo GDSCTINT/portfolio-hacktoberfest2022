@@ -1,3 +1,190 @@
-<div class="footer">
-    <h1>footer</h1>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #footer {
+            background-color: black;
+        }
+
+        #contactus {
+            display: flex;
+            width: 100%;
+        }
+
+        #git {
+            color: white;
+            font-size: 25px;
+            width: 40%;
+            margin-left: 40px;
+        }
+
+        #form {
+            /*border: solid red 2px;
+    background-color: blak;*/
+
+            height: auto;
+            margin-left: 50px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: goldenrod;
+            color: white;
+            font-size: 17px;
+            border-radius: 10px;
+        }
+
+        label {
+            color: lightgreen;
+            font-size: 21px;
+            font-weight: 150;
+        }
+
+        input {
+            width: 70%;
+            height: 22px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border: solid white 2px;
+            font-size: 17px;
+        }
+
+        #msgdiv {
+            width: 40%;
+        }
+
+        #textbox {
+            margin-top: 7rem;
+            width: 20rem;
+            height: 220px;
+        }
+
+        #mh {
+            text-align: center;
+            font-size: 60px;
+            color: whitesmoke;
+            margin-bottom: -30px;
+        }
+
+        #info {
+            height: auto;
+            margin-top: 3rem;
+            margin-right: 40px;
+            margin-left: -120px;
+        }
+
+        #info h1 {
+            margin-bottom: -8px;
+            font-size: 40px;
+            color: white;
+        }
+
+        #info h3 {
+            font-size: 21px;
+            color: lightgreen;
+            font-weight: 50;
+            line-height: 2px;
+        }
+
+        #info p {
+            font-size: 19px;
+            line-height: 60px;
+            font-weight: lighter;
+            color: grey;
+        }
+
+        .lastp {
+            font-size: 27px;
+            color: grey;
+            text-align: center;
+        }
+
+        .conimg {
+            width: 35px;
+            height: 35px;
+            padding: 25 px;
+            padding-left: 3%;
+        }
+
+        #conimgdiv {
+            padding-left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="footer">
+        <h1 id="mh">Get In Touch</h1>
+        <div id="contactus">
+            <div id="git">
+                <div id="form">
+                    <h1>Get in touch</h1>
+                    <form action="submit">
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="First Name"><br>
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="Last Name"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="Email"><br>
+                        <label for="phone">Phone No:</label><br>
+                        <input type="tel" id="phone" name="Phone"><br>
+                    </form>
+                </div>
+            </div>
+
+            <div id="msgdiv">
+                <form action="">
+                    <input id="textbox" type="text" id="msg" name="Your Message" row="20" cols="40"><br>
+                    <button>Send Message</button>
+                </form>
+            </div>
+
+            <div id="info">
+                <h1>Contact Details</h1><br>
+                <h3>EMAIL</h3>
+                <p>sachin@gmail.com</p>
+                <h3>Phone</h3>
+                <p>+91 637674XXXX</p>
+                <h3>Fax</h3>
+                <p>+91 637674XXXX</p>
+                <h3>Address</h3>
+                <p> X123
+                    Xyz
+                    India
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <p class="lastp">ALL Right Reserverd @copy2022 | This Template is made by Sachin Kumar</p>
+        <br>
+        <div id="conimgdiv">
+            <img class="conimg" src="fb.png" alt="">
+            <img class="conimg" src="ig.png" alt="" style="width: 35px; height: 30px;">
+            <img class="conimg" src="tw1.png" alt="">
+            <img class="conimg" src="li.png" alt="">
+            <img class="conimg" src="yt.png" alt="" style="width: 35px; height: 35px;">
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>
