@@ -1,0 +1,14 @@
+@use '../util/' as u;
+
+* {
+    font-family: u.$font;
+}
+
+p {
+    margin-top: 0;
+}
+
+a, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: black;
+}
