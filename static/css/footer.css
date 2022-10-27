@@ -1,0 +1,149 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#contactus {
+    width: 100%;
+    height: max-content;
+    background-color: black;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#contactus h1 {
+    padding-bottom: 10px;
+    font-size: 2.2rem;
+    color: white;
+}
+
+#git {
+    color: white;
+    font-size: 17px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+#gitsec {
+    display: flex;
+}
+
+#form {
+    /*border: solid red 2px;
+background-color: black;*/
+
+    height: auto;
+    margin-left: 10px;
+    justify-items: center;
+}
+
+#form button {
+    width: 150px;
+    height: 40px;
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+label {
+    color: white;
+    font-size: 21px;
+    font-weight: 150;
+    padding-bottom:10px;
+}
+
+input {
+    width: 110%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: solid white 2px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#textbox {
+    width: 110%;
+    height: 80px;
+    font-size: 18px;
+}
+
+#mh {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    margin-bottom: -30px;
+}
+
+#info {
+    height: auto;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+#info h3 {
+    color: white;
+    font-weight: 50;
+    line-height: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+#info h5 {
+    color: white;
+    font-weight: 50;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+#info p {
+    font-size: 23px;
+    line-height: 40px;
+    font-weight: lighter;
+    color: grey;
+}
+
+.lastp {
+    font-size: 19px;
+    color: grey;
+    text-align: center;
+}
+
+.conimg {
+    width: 30px;
+    height: 30px;
+    padding-left: 3%;
+}
+
+#conimgdiv {
+    padding-left: 35%;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+    #git {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #gitsec {
+        display: flexbox;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    #info {
+        padding: 10px;
+    }
+}

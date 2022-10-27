@@ -1,0 +1,244 @@
+@use '../global/colors' as c;
+
+.navbar {
+    height: 16rem;
+    width: 100%;
+    margin: auto;
+    // border: 3px solid rgb(162, 162, 162);
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 1);
+    
+    &__logo {
+        padding-left: 5rem;
+        margin-top: 3rem;
+        width: 20rem;
+        position: absolute;
+
+        &__color {
+            opacity: 75%;
+        }
+        &__grey {
+            top: 10px;
+            left: 10px;
+        }
+        &__white {
+            top: 5px;
+            left: 5px;
+            opacity: 100%;
+        }
+    }
+
+    &__header {
+        margin-left: 24rem;
+        font-size: 3.2rem;
+        transform: translateY(180%);
+    }
+
+    &__subheader {
+        margin-left: 22rem;
+        transform: translate(10%, 300%);
+    }
+
+    &__menu {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position: fixed;
+        top: 0;
+        right: 5vw;
+        &__fill {
+            
+            &__text {
+                padding: 0 2rem;
+                font-size: 1.5rem;
+                transform: translateY(-180%);
+            }
+
+            &__home, &__about, &__events, &__domain, &__members, &__coremembers {
+                transform: translateY(-35%);
+                transition: all ease-in-out 1s;
+
+                &:hover {
+                    transform: translateY(0%);
+                }
+
+                &__bg {
+                    padding: 10rem 1rem 1rem 1rem ;
+                    margin: 0 0.5rem;
+                }
+
+                &__underline {
+                    margin: 0 0.5rem;
+                    padding: 0.4rem 0;
+                    border-radius: 0 0 8px 8px;
+                }
+            }
+
+            &__home {
+                &__bg {
+                    background-color: c.$red1;
+                }
+
+                &__underline {
+                    background-color: c.$red3;
+                }
+            }
+
+            &__about, &__members {
+                &__bg {
+                    // font-size: 2rem;
+                    background-color: c.$yellow1
+                }
+
+                &__underline {
+                    background-color: c.$yellow3;
+                }
+            }
+
+            &__domain {
+                &__bg {
+                    // font-size: 2rem;
+                    background-color: c.$blue1;
+                }
+
+                &__underline {
+                    background-color: c.$blue3;
+                }
+            }
+
+            &__events, &__coremembers {
+                &__bg {
+                    // font-size: 2rem;
+                    background-color: c.$green1;
+                }
+
+                &__underline {
+                    background-color: c.$green3;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .navbar {
+        
+        &__logo {
+            padding-left: 1rem;
+            width: 10rem;
+        }
+
+        &__header {
+            margin-top: 3rem;
+            width: 30rem;
+            position: absolute;
+            margin-left: 5rem;
+            top: 0;
+            left: 0;
+            padding-left: 4rem;
+            transform: translateY(30%);
+            text-align: right;
+            font-size: 2.7rem;
+        }
+
+        &__subheader {
+            position: absolute;
+            margin-left: 10rem;
+            top: 0;
+            left: 0;
+            padding-right: 4rem;
+            transform: translateY(550%);
+        }    
+
+
+        &__menu {
+            &__fill {                
+
+                &__text {
+                    // flex-direction: column;
+                    // justify-content: end;
+                    // text-align: right;
+                    padding: 0 0;
+                    width: 3rem;
+                    transform: rotate(-90deg) translate(150%, 50%);
+                }
+
+                &__home, &__about, &__events, &__domain, &__coremembers, &__members {
+
+                    &:hover {
+                        transform: translateY(-15%);
+                    }
+
+                    transform: translateY(-30%);
+
+                    &__bg{
+
+                        padding-bottom: 10rem;
+                        width: 4rem;
+                    }
+
+                    &__underline {
+                        padding: 0.4rem 0;
+                        width: 4rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        height: 15rem;
+        transform: translateY(-5%);
+    
+        &__logo {
+            width: 25rem;
+            margin-left: -2rem;
+            padding: 0.5rem 2rem 0 5rem;
+        }
+
+        &__header {
+            margin-top: 3rem;
+            width: 30rem;
+            position: absolute;
+            margin-left: 20rem;
+            top: 0;
+            right: 0;
+            padding-right: 4rem;
+            transform: translateY(30%);
+            text-align: right;
+            font-size: 2.7rem;
+        }
+
+        &__subheader {
+            position: absolute;
+            margin-left: 0;
+            top: 0;
+            right: 0;
+            padding-right: 4rem;
+            transform: translateY(500%);
+        }    
+
+        &__menu {
+            transform: rotate(90deg) translate(70%, -170%);
+            &__fill {
+
+                &__text {
+                    font-size: 1.4rem;
+                }
+
+                &__home, &__about, &__events, &__domain, &__coremembers, &__members {
+
+                    &:hover {
+                        transform: translateY(-15%);
+                    }
+                }
+            }
+        }
+    }
+}
