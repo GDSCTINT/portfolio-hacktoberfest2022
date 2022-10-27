@@ -1,18 +1,34 @@
 <html>
 <head>
+  <!-- Outfit font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="static/css/style.css">
+  
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./static/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <title>Home</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+  <meta name="robots" content="index,follow" >
+
+  <link rel="icon" href="./static/Logo/logo_color.ico">
+  <title>Student Developer Club</title>
 </head>
 <body>
-    <div data-include="nav" class ="navbar-gdsc"></div>
-    <div data-include="about" class ="gdsc" ></div>
-    <div data-include="events" class ="gdsc"></div>
-    <div data-include="domains" class ="gdsc"></div>
-    <div data-include="coremembers" class ="gdsc"></div>
-    <div data-include="members" class ="gdsc"></div>
-    <div data-include="footer" class ="footer-gdsc"></div>
+    <div data-include="nav" class ="navbar"></div>
+    <div id="home"></div>
+    <div data-include="about" id="about" class ="gdsc" ></div>
+    <div data-include="events" id="event" class ="gdsc"></div>
+    <div data-include="domains" id="domain" class ="gdsc"></div>
+    <div data-include="coremembers" id="coremembers" class ="gdsc"></div>
+    <div data-include="members" id="members" class ="gdsc"></div>
+    <div data-include="footer" id="footer" class ="footer"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script >
         var includes = $("[data-include]");
